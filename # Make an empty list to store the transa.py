@@ -1,0 +1,1 @@
+# Make an empty list to store the transactions
