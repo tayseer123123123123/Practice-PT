@@ -11,3 +11,14 @@ def add_transaction():
     # Print the confirmation message
     print("Transaction added.")
 
+#Function for calculating the user's total income/expenses
+def calculate_total():
+    total_income = 0
+    total_expenses = 0
+
+    # Iterate through the transactions - update the totals accordingly
+    for transaction in transactions:
+        if transaction[0] == "Income":
+            total_income += transaction[1]
+        elif transaction[0] == "Expense":
+            total_expenses += transaction[1]
